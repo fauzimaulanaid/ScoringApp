@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_shuttlecock_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/shuttlecock"
+        android:visibility="invisible"
+        android:contentDescription="@string/cock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left" />
+
+    <TextView
+        android:id="@+id/left_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_dummy_number"
+        android:textColor="@color/black"
+        android:textSize="84sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_shuttlecock_left" />
+
+    <Button
+        android:id="@+id/btn_min_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/min"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/left_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/left_score" />
+
+    <Button
+        android:id="@+id/btn_plus_left"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/plus"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/left_score"
+        app:layout_constraintTop_toBottomOf="@+id/left_score" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus_left" />
+
+    <ImageView
+        android:id="@+id/img_shuttlecock_right"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/shuttlecock"
+        android:visibility="invisible"
+        android:contentDescription="@string/cock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right" />
+
+    <TextView
+        android:id="@+id/right_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right_dummy_number"
+        android:textColor="@color/black"
+        android:textSize="84sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_shuttlecock_right" />
+
+    <Button
+        android:id="@+id/btn_min_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/min"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/right_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_score" />
+
+    <Button
+        android:id="@+id/btn_plus_right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="@string/plus"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/right_score"
+        app:layout_constraintTop_toBottomOf="@+id/right_score" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textSize="11sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

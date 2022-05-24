@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Scoring App</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="plus">+</string>
+    <string name="min">-</string>
+    <string name="right_dummy_number">0</string>
+    <string name="left_dummy_number">0</string>
+    <string name="reset">Reset</string>
+    <string name="save_reset">Save and Reset</string>
+    <string name="copyright">Copyright ©2021 Muhammad Fauzi Maulana. All rights reserved.</string>
+    <string name="copy">©2021 Muhammad Fauzi Maulana</string>
+    <string name="cock">cock</string>
+</resources>
